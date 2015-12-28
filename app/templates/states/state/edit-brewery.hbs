@@ -1,0 +1,14 @@
+<h1>Editing {{model.name}}</h1>
+
+<form>
+  <ul>
+    <li>Brewery Name: {{textarea value=model.name}}</li>
+    <li>Brewery Address: {{textarea value=model.address}}</li>
+  </ul>
+  <button type="submit" {{action "saveEdits" model}}>Save</button>
+  <button type="submit" {{action "deleteBrewery" model}}>Delete</button>
+
+</form>
+
+
+<h3>{{#link-to 'states.state.brewery' model}}Back to {{model.name}}{{/link-to}}</h3>

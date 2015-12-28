@@ -1,0 +1,58 @@
+/*Home page*/
+.homepage-image{
+  width: 100%;
+}
+
+.homepage-logo {
+  font-size:80px;
+}
+
+/*States page*/
+.scroll-states{
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
+#state-panel {
+  background-color:tan;
+  height: 500px;
+}
+
+#state-logo-box {
+  height: 200px;
+  width: 150px;
+  border-color: black;
+  border-style: solid;
+}
+
+#left-panel{
+  border-color: black;
+  border-style: solid;
+  height: 500px;
+}
+
+#dummy-map {
+  height:100px;
+  border-color: black;
+  border-style: solid;
+}
+
+#map-panel{
+  border-color: black;
+  border-style: solid;
+  height: 500px;
+}
+
+#right-panel{
+  border-color: black;
+  border-style: solid;
+  height: 500px;
+}
+
+#brewery-list ul {
+  width: 100%;
+}
+
+
+

@@ -1,0 +1,10 @@
+{{!-- USE COMPONENT HERE --}}
+<div id="dummy-map">Dummy Map</div>
+
+<h1>{{model.name}}</h1>
+<p>{{model.address}}</p>
+
+<h3>{{#link-to 'states.state.edit-brewery' model}}Edit{{/link-to}}</h3>
+<h3>{{#link-to 'states.state.brewery.reviews' model}}Reviews{{/link-to}}</h3>
+
+{{outlet}}

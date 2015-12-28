@@ -6,6 +6,16 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('states', function() {
+    this.route('state', { path: ':state_id' }, function() {
+      this.route('breweries');
+      this.route('brewery', {path: 'breweries/:brewery_id'}, function() {
+        this.route('reviews');
+      });
+      this.route('create-brewery');
+      this.route('edit-brewery', {path: 'breweries/:brewery_id/edit'});
+    });
+  });
 });
 
 export default Router;

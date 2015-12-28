@@ -1,0 +1,34 @@
+<div class="row">
+  {{!-- Spacing --}}
+  <div class="col-md-1"></div>
+  
+  <div id="state-panel" class="col-md-10">
+    <div id="left-panel" class="col-md-2">
+      <div id="state-logo-box">
+        <h8>{{#link-to 'states.state' model}}{{model.name}} Outline{{/link-to}}</h8>
+      </div>
+    </div>
+
+    <div id="map-panel" class="col-md-8">
+      {{outlet}}
+    </div>
+
+    <div id="right-panel" class="col-md-2">
+      {{!-- USE COMPONENT HERE --}}
+      <div id='brewery-list'>      
+        <ul class="list-group">
+          {{#each model.breweries as |brewery|}}
+            <li class="list-group-item">{{#link-to 'states.state.brewery' brewery}}{{brewery.name}}{{/link-to}}</li>
+          {{/each}}
+        </ul>
+
+        <h3>{{#link-to 'states.state.create-brewery' model}}+ Brewery{{/link-to}}</h3>
+
+      </div>      
+    </div>
+
+  </div>
+
+  {{!-- Spacing --}}  
+  <div class="col-md-1"></div>
+</div>
