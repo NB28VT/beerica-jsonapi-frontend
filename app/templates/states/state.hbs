@@ -5,8 +5,11 @@
   <div id="state-panel" class="col-md-10">
     <div id="left-panel" class="col-md-2">
       <div id="state-logo-box">
-        <h8>{{#link-to 'states.state' model}}{{model.name}} Outline{{/link-to}}</h8>
+        <h2>{{model.name}}</h2>
+        {{state-logo state=model.name}}
+          <h3>Total Breweries:</h3>
       </div>
+
     </div>
 
     <div id="map-panel" class="col-md-8">

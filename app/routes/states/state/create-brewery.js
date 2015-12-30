@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function(params) {
-    return this.modelFor('states.state', params.state_id)
+    return this.modelFor('states.state', params.state_id);
   },
 
   actions: {

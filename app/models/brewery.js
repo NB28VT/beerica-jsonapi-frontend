@@ -4,6 +4,7 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   address: DS.attr('string'),
   state: DS.belongsTo('state'),
-  beers: DS.hasMany('beer')
+  beers: DS.hasMany('beer'),
+  reviews: DS.hasMany('review')
 });
 

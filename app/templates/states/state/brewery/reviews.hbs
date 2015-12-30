@@ -2,5 +2,12 @@
 
 {{#each model.reviews as |review|}}
   <h1>{{review.title}}</h1>
+  <h3>User: {{review.user.name}}</h3>
   <p>{{review.content}}</p>
 {{/each}}
+
+<h3>Create New Comment</h3>
+{{input placeholder="Title" value=title}}
+{{input placeholder="Content" value=content}}
+
+<button{{action "createReview" model}}>Create</button>

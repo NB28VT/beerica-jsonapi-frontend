@@ -1,3 +1,8 @@
+/*Global*/
+#global-layout{
+  background-color: #2D5F32;
+}
+
 /*Home page*/
 .homepage-image{
   width: 100%;
@@ -14,14 +19,29 @@
   overflow-x: hidden;
 }
 
+.state-dropdown {
+  width: 100%;
+  height:75px;
+}
+
+
+/*State Page*/
+
+.state-logo img{
+  height: 100%;
+  width: 100%;
+}
+
 #state-panel {
   background-color:tan;
   height: 500px;
+  border-radius: 25px;
 }
 
+
 #state-logo-box {
-  height: 200px;
-  width: 150px;
+  height: 100%;
+  width: 100%;
   border-color: black;
   border-style: solid;
 }
@@ -50,7 +70,7 @@
   height: 500px;
 }
 
-#brewery-list ul {
+#brewery-list {
   width: 100%;
 }
 

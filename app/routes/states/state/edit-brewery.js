@@ -14,7 +14,6 @@ export default Ember.Route.extend({
 
     deleteBrewery: function(brewery) {
       var _that = this;
-      var state = brewery.state;
       brewery.destroyRecord();
       _that.transitionTo('states.state.breweries');
 
