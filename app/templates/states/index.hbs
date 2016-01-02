@@ -1,0 +1,23 @@
+<div class="col-md-2"></div>
+
+<div id="getting-started-panel" class="col-md-8">
+  <h1>Getting Started</h1>
+  <p>Welcome To Beerica 2.0, a mapping of breweries around the United States, and the wonderful (or not so wonderful) beers they make. To get started, select a state from dropdown below.</p>
+
+
+  <button id="getting-started-panel-state-dropdown" class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Skip To State <span class="caret"></span></a>
+
+    <ul class="dropdown-menu scroll-states">
+      {{#each model as |state|}}
+        <li>{{#link-to 'states.state' state}}{{state.name}}{{/link-to}}</li>
+      {{/each}} 
+    </ul>
+  </button>
+
+</div>
+
+<div class="col-md-2"></div>
+
+
+{{outlet}}

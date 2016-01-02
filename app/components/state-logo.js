@@ -8,7 +8,7 @@ export default Ember.Component.extend({
 
   stateLink: Ember.computed('state', function(){
     var lowerCase = this.get('state').replace(/\s/,"-").toLowerCase();
-    return "assets/images/state-icons/state-" + lowerCase + ".png"     
+    return "assets/images/state-icons/state-" + lowerCase + ".png";     
   })
 
 });

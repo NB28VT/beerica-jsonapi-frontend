@@ -1,15 +1,33 @@
 /*Global*/
-#global-layout{
+body {
   background-color: #2D5F32;
 }
 
-/*Home page*/
+/*Landing page*/
 .homepage-image{
   width: 100%;
 }
 
+#getting-started-button {
+  margin-left:30%;
+  background: tan;
+  font-size: 40px;
+  height: 80px;
+  width: 400px;
+
+}
+
 .homepage-logo {
   font-size:80px;
+  color: black;
+}
+
+/*Index Page*/
+
+#getting-started-panel {
+  background-color:tan;
+  height: 200px;
+  border-radius: 25px;
 }
 
 /*States page*/
@@ -19,11 +37,14 @@
   overflow-x: hidden;
 }
 
-.state-dropdown {
-  width: 100%;
+#getting-started-panel-state-dropdown{
+  background-color: white;
+  font-size: 20px;
+  margin-left: 33.3%;
+  width: 300px;
   height:75px;
+  border-radius: 5px;
 }
-
 
 /*State Page*/
 
