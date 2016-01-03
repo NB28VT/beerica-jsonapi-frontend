@@ -1,10 +1,31 @@
 {{!-- USE COMPONENT HERE --}}
-<div id="dummy-map">Dummy Map</div>
+<div id="brewery-top-bar" class="row">
+  <div class="col-md-4">
+    <img id="brewery-logo-image" src={{model.medium_image}}>
+  </div>
+  <div class="col-md-8">
+    <h1>{{model.name}}</h1>
+  </div>
+</div>
 
-<h1>{{model.name}}</h1>
+<div id="brewery-panel" class="row">
+  <div class="col-md-8">
+    <h3>Address: {{model.address}}, {{model.state.name}} {{model.postal_code}}</h3>
+    <h3>Established: {{model.established}}</h3>
+    <p>{{model.description}}</p>    
+    <h3>Open to the Public?  {{model.open_to_public}}</h3>
+  </div>
+
+  <div class="col-md-4">
+    <div id="dummy-map">Dummy Map ya DUMMY</div>
+  </div>
+</div>
+
+
+{{!-- <h1>{{model.name}}</h1>
 <p>{{model.address}}</p>
 
 <h3>{{#link-to 'states.state.edit-brewery' model}}Edit{{/link-to}}</h3>
 <h3>{{#link-to 'states.state.brewery.reviews' model}}Reviews{{/link-to}}</h3>
-
+ --}}
 {{outlet}}

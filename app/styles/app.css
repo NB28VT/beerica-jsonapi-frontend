@@ -1,5 +1,6 @@
 /*Global*/
 body {
+  font-family: 'Raleway', sans-serif;
   background-color: #2D5F32;
 }
 
@@ -74,7 +75,7 @@ body {
 }
 
 #dummy-map {
-  height:100px;
+  height:300px;
   border-color: black;
   border-style: solid;
 }
@@ -94,6 +95,24 @@ body {
 #brewery-list {
   width: 100%;
 }
+
+/*Brewery Page*/
+#brewery-panel {
+  margin-top: 15px;
+  height:600px;
+}
+
+
+#brewery-logo-image{
+  width: 100%;
+}
+
+#brewery-top-bar{
+  color: black;
+  background-color: white;
+}
+
+
 
 
 
