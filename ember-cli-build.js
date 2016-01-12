@@ -4,6 +4,10 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+
+    dotEnv :{
+      clientAllowedKeys: ['GOOGLE_MAPS_API_TOKEN']
+    }
     // Add options here
   });
 

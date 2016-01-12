@@ -2,7 +2,7 @@
 
 var contentSecurityPolicy = { 
   'default-src': "'none'",
-  'script-src': "'self'",
+  'script-src': "'self' https://maps.googleapis.com",
   'font-src': "'self'", 
   'connect-src': "'self' http://localhost:3000",
   'img-src': "'self'",
@@ -25,6 +25,7 @@ module.exports = function(environment) {
     },
 
     APP: {
+      GOOGLE_MAPS_API_TOKEN: process.env.GOOGLE_MAPS_API_TOKEN
       // Here you can pass flags/options to your application instance
       // when it is created
     }
