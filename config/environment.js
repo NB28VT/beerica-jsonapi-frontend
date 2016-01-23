@@ -1,13 +1,12 @@
 /* jshint node: true */
 
-var contentSecurityPolicy = { 
+var contentSecurityPolicy = {
   'default-src': "'none'",
-  'script-src': "'self' https://maps.googleapis.com",
-  'font-src': "'self'", 
-  'connect-src': "'self' http://localhost:3000",
-  'img-src': "'self'",
-  'style-src': "'self' 'unsafe-inline'",
-  'media-src': "'self'"
+  'script-src': "'self' 'unsafe-eval' *.googleapis.com maps.gstatic.com",
+  'font-src': "'self' fonts.gstatic.com",
+  'connect-src': "'self' maps.gstatic.com http://localhost:3000",
+  'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com https://s3.amazonaws.com",
+  'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
 };
 
 module.exports = function(environment) {
@@ -24,12 +23,13 @@ module.exports = function(environment) {
       }
     },
 
+
     APP: {
-      GOOGLE_MAPS_API_TOKEN: process.env.GOOGLE_MAPS_API_TOKEN
-      // Here you can pass flags/options to your application instance
-      // when it is created
     }
   };
+
+
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

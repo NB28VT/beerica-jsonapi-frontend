@@ -17,8 +17,9 @@
   </div>
 
   <div class="col-md-4">
-    {{google-map}}
-    <div id="dummy-map">Dummy Map ya DUMMY</div>
+    {{#g-map lat=model.latitude lng=model.longitude zoom=8 as |context|}}
+      {{g-map-marker context lat=model.latitude lng=model.longitude title=model.name}}
+    {{/g-map}}
   </div>
 </div>
 

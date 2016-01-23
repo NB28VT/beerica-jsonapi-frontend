@@ -65,31 +65,35 @@ body {
   height: 100%;
   width: 100%;
   border-color: black;
-  border-style: solid;
-}
+/*  border-style: solid;
+*/}
 
 #left-panel{
   border-color: black;
-  border-style: solid;
-  height: 500px;
+/*  border-style: solid;
+*/ 
+  border-right: solid;
+
+ height: 500px;
 }
 
 #dummy-map {
   height:300px;
   border-color: black;
-  border-style: solid;
-}
+/*  border-style: solid;
+*/}
 
 #map-panel{
   border-color: black;
-  border-style: solid;
-  height: 500px;
+/*  border-style: solid;
+*/  height: 500px;
 }
 
 #right-panel{
   border-color: black;
-  border-style: solid;
-  height: 500px;
+/*  border-style: solid;
+*/  height: 500px;
+  border-left: solid;
 }
 
 #brewery-list {
@@ -112,7 +116,11 @@ body {
   background-color: white;
 }
 
-
+/*Google Maps API*/
+.g-map-canvas {
+  width: 250px;
+  height: 250px;
+}
 
 
 
