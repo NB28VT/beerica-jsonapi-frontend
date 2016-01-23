@@ -21,7 +21,7 @@
       <div id='brewery-list'>      
         <ul class="list-group">
           {{#each model.breweries as |brewery|}}
-            <li class="list-group-item">{{#link-to 'states.state.brewery' brewery}}{{brewery.name}}{{/link-to}}</li>
+            <li class="list-group-item">{{#link-to 'states.state.brewery.info' brewery}}{{brewery.name}}{{/link-to}}</li>
           {{/each}}
         </ul>
 

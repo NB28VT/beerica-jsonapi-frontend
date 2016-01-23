@@ -8,19 +8,12 @@
   </div>
 </div>
 
-<div id="brewery-panel" class="row">
-  <div class="col-md-8">
-    <h3>Address: {{model.address}}, {{model.state.name}} {{model.postal_code}}</h3>
-    <h3>Established: {{model.established}}</h3>
-    <p>{{model.description}}</p>    
-    <h3>Open to the Public?  {{model.open_to_public}}</h3>
-  </div>
-
-  <div id="brewery-map" class="col-md-4">
-    {{#g-map lat=model.latitude lng=model.longitude zoom=8 as |context|}}
-      {{g-map-marker context lat=model.latitude lng=model.longitude title=model.name}}
-    {{/g-map}}
-  </div>
+<div  class="row">
+  <ul id="brewery-navbar" class="nav navbar-nav">
+    <li>{{link-to "Brewery Info" 'states.state.brewery.info' model}}</li>
+    <li>{{link-to "Beers" 'states.state.brewery.beers' model}}</li>
+    <li>{{link-to "Reviews" 'states.state.brewery.reviews' model}}</li>
+  </ul>
 </div>
 
 
