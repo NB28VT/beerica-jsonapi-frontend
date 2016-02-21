@@ -1,2 +1,21 @@
-<h1>Dah Beers Page</h1>
+
+<div id="beer-summaries">
+  <table class="table table-striped">
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Style</th>
+      <th>ABV</th>
+    </tr>
+
+    {{#each model.beers as |beer|}}
+      <tr>
+        <td><img src={{beer.icon}}></td>
+        <td>{{beer.name}}</td>
+        <td>{{beer.style}}</td>
+        <td>{{beer.abv}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
 {{outlet}}

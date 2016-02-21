@@ -89,6 +89,7 @@ body {
 */  
   height: 600px;
   border-left: solid;
+  overflow: auto;
 }
 
 #brewery-list {
@@ -117,7 +118,10 @@ h2 {
 #brewery-navbar {
   background-color: white;
   width: 100%;
+  font-size: 20px;
 }
+
+/*Beers Page*/
 
 /*Google Maps API*/
 .g-map-canvas {
